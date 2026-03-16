@@ -1,22 +1,50 @@
+```css
+/* ================= RESET BÁSICO ================= */
+/* Remove margens padrão e melhora cálculo de layout */
+
+*{
+box-sizing:border-box;
+}
+
+/* ================= ESTILO GLOBAL ================= */
+
 body{
 font-family: Arial, Helvetica, sans-serif;
 margin:0;
 background:#f4f4f4;
+line-height:1.6;
 }
+
+
+/* ================= HEADER / MENU ================= */
 
 header{
 background:#111;
 color:white;
 padding:20px;
+
 display:flex;
 justify-content:space-between;
+align-items:center;
 }
+
+/* Links do menu de navegação */
 
 nav a{
 color:white;
 margin-left:15px;
 text-decoration:none;
+font-weight:bold;
 }
+
+/* Efeito ao passar o mouse */
+
+nav a:hover{
+color:#c59d5f;
+}
+
+
+/* ================= HERO (SEÇÃO DE DESTAQUE) ================= */
 
 .hero{
 background:#333;
@@ -25,17 +53,44 @@ text-align:center;
 padding:80px 20px;
 }
 
+/* Título principal */
+
+.hero h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+
+/* ================= BOTÃO PRINCIPAL ================= */
+
 .btn{
 background:#c59d5f;
 color:white;
 padding:10px 20px;
 text-decoration:none;
+border-radius:5px;
+display:inline-block;
+margin-top:10px;
 }
+
+/* Efeito hover no botão */
+
+.btn:hover{
+background:#a87f45;
+}
+
+
+/* ================= SEÇÕES DO SITE ================= */
 
 section{
 padding:60px 20px;
 text-align:center;
+max-width:1000px;
+margin:auto;
 }
+
+
+/* ================= FOOTER ================= */
 
 footer{
 background:#111;
@@ -43,3 +98,33 @@ color:white;
 text-align:center;
 padding:20px;
 }
+
+
+/* ================= BOTÃO WHATSAPP FIXO ================= */
+
+.whatsapp-button{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+background:#25D366;
+color:white;
+
+padding:15px 20px;
+
+border-radius:30px;
+
+text-decoration:none;
+font-weight:bold;
+
+box-shadow:0 4px 8px rgba(0,0,0,0.2);
+
+}
+
+/* Efeito ao passar o mouse */
+
+.whatsapp-button:hover{
+background:#1ebe5d;
+}
+```
